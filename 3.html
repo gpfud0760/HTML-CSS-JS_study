@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <title>Web - JS</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="color.js"></script>
+    <!-- <script>
+    // function linkSetColor(color) {
+    //     var alist = document.querySelectorAll('a');
+    //     var i = 0;
+    //     while(i < alist.length) {
+    //         console.log(alist[i]);
+    //         alist[i].style.color = color;
+    //         i = i + 1;
+    //     }
+    // }
+    var Link = {
+        setColor : function(color) {
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length) {
+                console.log(alist[i]);
+                alist[i].style.color = color;
+                i = i + 1;
+            }
+        }
+    }
+    var Body = {
+        setColor : function(color) {
+            document.querySelector('body').style.color = color;
+        },
+        setBackgroundColor : function(color) {
+            document.querySelector('body').style.backgroundColor = color;
+        }
+    }
+    // function bodySetColor(color) {
+    //     document.querySelector('body').style.color = color;
+    // }
+    // function bodySetBackgroundColor(color) {
+    //     document.querySelector('body').style.backgroundColor = color;
+    // }
+    function nightDayHandler(self) {
+        var target = document.querySelector('body');
+
+        if(self.value === 'night') {
+            Body.setBackgroundColor('black');
+            Body.setColor('white');
+            self.value = 'day';
+
+            Link.setColor('powderblue');
+        } else { 
+            Body.setBackgroundColor('white');
+            Body.setColor('black');
+            self.value = 'night';
+                        
+            Link.setColor('blue');
+        }
+    }
+        
+    </script> -->
+</head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="nigh1" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day1" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+    ">
+
+    <input id="night_day" type="button" value="night2" onclick="
+
+        if(document.querySelector('#night_day').value === 'night2') {
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('#night_day').value = 'day';
+        } else { 
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('#night_day').value = 'night2';
+        }
+    ">
+    <br><br>
+    <input type="button" value="night" onclick="
+        nightDayHandler(this);
+    ">
+
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+    </ol>
+
+    <h1>JS</h1>
+
+    <p>
+        JavaScript는 유형 및 연산자, 표준 내장 객체 및 메소드가 있는 다중 패러다임, 동적 언어입니다. 구문은 Java 및 C 언어를 기반으로 합니다. 이러한 언어의 많은 구조가 JavaScript에도 적용됩니다. JavaScript는 클래스 대신 객체 프로토 타입을 사용하여 객체 지향 프로그래밍을 지원합니다 (프로토 타입 상속 및 ES2015 classes. JavaScript는 함수형 프로그래밍도 지원합니다. 함수는 객체이며, 함수는 실행 가능한 코드를 유지하고 다른 객체와 마찬가지로 전달 될 수 있습니다.
+    </p>
+
+    <input type="button" value="night" onclick="
+        if(this.value === 'night') {
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            this.value = 'day';
+        } else { 
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            this.value = 'night';
+        }
+    ">
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Web - HTML</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1><a href="index.html"><font color="red"> WEB</font></a></h1>
+        <ol>
+            <li><a href="1.html" onclick="
+                document.querySelector('article').innerHTML = '<h2>HTML</h2>HTML is...';
+                ">HTML</a></li>
+            <li><a href="2.html" onclick="
+                document.querySelector('article').innerHTML = '<h2>CSS</h2>CSS is...';
+                ">CSS</a></li>
+            <li><a href="3.html" onclick="
+                document.querySelector('article').innerHTML = '<h2>HTML</h2>HTML is...';
+                ">JavaScript</a></li>
+        </ol>
+        <!-- Ajax 동적으로 컨텐츠 변경하기 -->
+        <ol>
+            <li><a onclick="
+                document.querySelector('article').innerHTML = '<h2>HTML</h2>HTML is...';
+                ">HTML</a></li>
+            <li><a onclick="
+                document.querySelector('article').innerHTML = '<h2>CSS</h2>CSS is...';
+                ">CSS</a></li>
+            <li><a onclick="
+                document.querySelector('article').innerHTML = '<h2>JS</h2>JS is...';
+                ">JavaScript</a></li>
+        </ol>
+        <ul>
+            <li>혜령</li>
+            <li>정우</li>
+            <li>구미</li>
+        </ul>
+
+        <article></article>
+
+        <h1>HTML이란 무엇인가?</h1>
+        <h1>HTML</h1>
+
+        <p>
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/7T7r_oSp0SE?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        
+        <a href="https://html.spec.whatwg.org/multipage/" target="_blank" title="html5 speicification">Hyprttext Markup Language (HTML)</a>
+        is the standard markup language for
+        <br>
+        <strong>creating <u>web</u></strong> pages and 
+        <img src="coding.jpg" wi dth="100%" alt="">
+        <p style="margin-top: 45px;">web applications.</p> 
+
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+
+        <!--댓글-->
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web1-hfedwi06b4.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/616e73edf7c0440a591eea94/1fibn9m7t';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        End of Tawk.to Script
+    </body>
+</html>
